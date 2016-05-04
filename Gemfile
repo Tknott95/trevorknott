@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+gem 'bcrypt'
 gem 'prawn'
 gem 'bootstrap-generators'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
