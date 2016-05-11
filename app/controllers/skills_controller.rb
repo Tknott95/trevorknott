@@ -69,6 +69,10 @@ Info -  Studied/taken multiple languages/classes:  C#, Unity, HTML, Ruby, Javasc
   def show
   end
 
+  def skills
+    @skills = "SELECT * FROM Skill"
+  end
+
   # GET /skills/new
   def new
     @skill = Skill.new
