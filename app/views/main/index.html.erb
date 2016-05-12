@@ -12,22 +12,12 @@
 </div>
 <div class="jumbotron">
   <div align="center">
-    <h1>Languages</h1>
+    <h1>Current Languages</h1>
     <br>
-    <large>C#</large>
-    |
-    <large>Ruby</large>
-    |
-    <large>Rails</large>
-    |
-    <large>HTML</large>
-    |
-    <large>CSS</large>
-    |
-    <large>SASS</large>
-    |
-    <large>Javascript</large>
-    <br>
+      <%= link_to skills_path, class: 'btn btn-xs' do %>
+    <span class="glyphicon glyphicon-link"></span>
+    Languages
+  <% end %>
 
   </div>
 </div>
@@ -48,8 +38,10 @@
 <div class="jumbotron">
   <div align="center">
     <h1>My Resume</h1>
+    <large>Click on the link below to download a .pdf version of my resume.</large>
     <br>
-    <a href="/skills.pdf">Download my Resume (.pdf) </a>
+    <br>
+    <span class="glyphicon glyphicon-download"><a href="/skills.pdf">Resume</a></span>
 
   </div>
 </div>

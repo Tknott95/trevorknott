@@ -1,12 +1,24 @@
 <div class="jumbotron">
   <div align="center">
     <h1>About Me</h1>
-    <h3>Trevor Knott</h3><br>
-    <image align="center" class="img-circle">
+     </div>
+</div>
+<div align="center">
+    <image align="center" width="20px">
       <%= image_tag 'placeholder_person.png' %>
     </image>
+    </div>
     <br>
     <br>
+    <div class="jumbotron">
+  <div align="center">
+    <h3>Trevor Knott</h3><br>
+    <h5><strong>About Me</strong></h5>
+    <br><br>
     <large>Innovation, creativity, and constant improvement are few reasons on why I fell in love with computer science. My passion continues to grow as I continue to learn more languages and improve my arsenal. My name is Trevor Knott, and I am a 20 year old computer programer from Denver, CO. I have obtained a certificate in Game Design and Development using C#, and one for Ruby on Rails. On top of those two certificates, I have obtained a micro-degree from Davinci Coders. I am now currently taking a night class learning front-end such as javascript, html, css, Jquery, etc. After this, I will have obtained the necessary skills to fully develop and design my website with complete customization. I am also currently immersed in a book covering SQL. Although I may be a computer nerd, I have a deep love for fitness as well, going to the gym now for 3 years twice a day. This has really help me develop discipline and learn that anything can be accomplished even if you have to tip-toe towards your goals. I currently am looking for a job!</large>
   </div>
 </div>
+  <%= link_to new_skill_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Skill
+  <% end %>

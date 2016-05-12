@@ -1,28 +1,18 @@
 <div class="page-header">
-  <%= link_to new_skill_path, class: 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-plus"></span>
-    New Skill
-  <% end %>
-  <h1>Listing skills</h1>
+  <h1 style="color:white">Current Known Computer Languages</h1>
 </div>
 
-<div class="table-responsive">
+<div class="table-responsive" style="background:white">
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-            <th>Skill</th>
-            <th></th>
-        <th></th>
-        <th></th>
+            <th>Languages</th>
       </tr>
     </thead>
 
     <tbody>
       <%= content_tag_for(:tr, @skills) do |skill| %>
             <td><%= skill.skill %></td>
-            <td><%= link_to 'Show', skill %></td>
-        <td><%= link_to 'Edit', edit_skill_path(skill) %></td>
-        <td><%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     </tbody>
   </table>
