@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'landing/index'
+
   resources :posts
   resources :skills
  root 'main#index'
