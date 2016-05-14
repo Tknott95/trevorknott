@@ -5,16 +5,10 @@
 </div>
 
 <div class="table-responsive" style="background:white">
-  <table class="table table-striped table-bordered table-hover">
-    <thead>
-      <tr>
-            <th>Languages</th>
-      </tr>
-    </thead>
-
-    <tbody>
+  <table class="table table-striped table-bordered table-hover" align="center">
+    <tbody align="center">
       <%= content_tag_for(:tr, @skills) do |skill| %>
-            <td><%= skill.skill %></td>
+            <td align ="center"><%= skill.skill %></td>
       <% end %>
     </tbody>
   </table>
